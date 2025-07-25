@@ -43,9 +43,7 @@ export class SignInPage {
   async submitSignInForm(user) {
     await this.step(`Fill the 'Sign In' form`, async () => {
       await this.fillEmailField(user.email);
-      console.log('email');
       await this.fillPasswordField(user.password);
-      console.log('password');
       await this.clickSignInButton();
     });
   }
